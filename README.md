@@ -40,8 +40,9 @@ Alternative: 1 linear servo
 
 # Preparation
 Before actually building this project, there were quite a few things that we needed to design.
- First of all, we needed to figure out how we wanted to keep track of all the pieces on the board. We eventually decided that trying to keep track of things like where each piece is, or whether a move is legal or not would make this project unnecessarily complicated. We decided to simply check if a square is occupied. If you try to move a piece to an occupied square, it will first kill the piece to clear the square by moving it off to the side, then move the new piece to the desired coordinate. Our design includes an 8x8 array that holds a 1 or a 0 to indicate its vacancy. See Figure 1 for our UML diagram.
-We also drew a system schematic to show where we needed to make connections to each hardware component. See Figure 2 for the Schematic.
+
+First of all, we needed to figure out how we wanted to keep track of all the pieces on the board. We eventually decided that trying to keep track of things like where each piece is, or whether a move is legal or not would make this project unnecessarily complicated. We decided to simply check if a square is occupied. If you try to move a piece to an occupied square, it will first kill the piece to clear the square by moving it off to the side, then move the new piece to the desired coordinate. Our design includes an 8x8 array that holds a 1 or a 0 to indicate its vacancy.
+ 
 We designed the actual chess board and pieces as well. We designed each square to be 4.5cm in length and width so that, including the buffer, the board would be 45 x 45 cm. In order to allow the pieces to slip past one another, the bottom diameter cannot exceed half the width of the square. All the pieces are designed to be 3D printed. We plan to use wood for the outside border of the board, and a thin acrylic sheet for the playing area. The enclosure for the keypad, LCD, and Nucleo board will be 3D printed. We also designed the linear rail mounts and track to be 3D printed as well.
 # Procedure 
 We took our design from the UML and started programming the microcontroller. We split up the functionality into 4 different files with their respective header files. One for the Motors, Keypad, LCD, and Clock. Inside of our main, we set up the virtual chess board to keep track of space vacancy. Using a state machine, we have a menu as well. The options are to “1.) Manual Game”, or “2.) Auto Game”. We await input from the keypad. Once a key is pressed, we check which option was selected and move to that respective state in the state machine. If “Manual Game” is selected, we go to a state that awaits a starting and ending coordinate. Once the coordinates are input, the magnet will move into position, enable, then move the pieces to the desired location. The LCD displays what was input and displays what state we’re currently in.
@@ -58,23 +59,6 @@ We tested the vertical movement by just calling the vertical movement function a
 Test 3: Input movement (From->To)
 
 We next ensured that after inputting two coordinates  it would be able to move a piece from the first coordinate to the second coordinate. In the process we especially did not want the magnet to drag pieces on its way to the first coordinate. So we had the controller disable the magnet, move the magnet to the first coordinate, turn on the magnet, and finally move the piece to the second coordinate. It passed this test as well. 
-
-
-
-
-
-
-
-
-
-# Figures  
-
-Figure 1: UML of the program
-
-
-
-Figure 2: System Schematic
-
 
 # Results
 
