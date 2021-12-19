@@ -67,7 +67,7 @@ We next ensured that after inputting two coordinates  it would be able to move a
 
 
 
-#Figures  
+# Figures  
 
 Figure 1: UML of the program
 
@@ -76,7 +76,7 @@ Figure 1: UML of the program
 Figure 2: System Schematic
 
 
-#Results
+# Results
 
 As an alternative, we got some linear servos that could physically raise up a neodymium magnet to attract the pieces because we were pretty worried that the electromagnet would not be strong enough to move the piece across the acrylic. First off, we found that the bare PLA plastic pieces would not slide very well. We solved this by adding felt to the bottom of each piece. We also noticed that the acrylic itself was fairly tacky, so we decided to leave the protective plastic covering on to help keep down the friction. Lastly,  after quite a bit of testing, we found that the electromagnet couldn’t draw enough current to be able to move a piece. We finally solved that problem by using an external power source to power the microcontroller and peripherals. That also meant that we needed to change the configuration of some jumpers to allow the board to be powered externally. Since the electromagnet seemed to be doing just fine, we never implemented the servo design. 
 
@@ -87,5 +87,5 @@ Another issue we found was with wire management. We wanted the design to be as t
 The last major issue came right as we were about to film the video. This entire time of testing and building this project, we have never had any issues with our keypad. Basically, once we wired it up, it was good to go. After running through the tests as a preliminary run, we added a small change to the code to display a phrase on the LCD (not at all related to the keypad). Once we loaded that new code onto the microcontroller we could not get the keypad to work! We quickly deleted whatever changes we had made and tried to run the code again. Strangely, our previous code was not working. We ended up taking apart the housing for the nucleo board, LCD, and Keypad to take a look. After repeatedly checking every single line going into the nucleo board and testing voltages and continuity on each one, we still could not get the keypad to work. We even disconnected the keypad and connected a brand new one to see if that was the issue. At that point, we just had to cut our losses because a critical part of the chess board was not working. The only thing we could record was the Auto game playback because that doesn’t require any keypad input from the user. After recording the Automatic game, we tried the keypad just in case. Somehow it had miraculously fixed itself and we were able to record the manual inputs as well.
 	
 
-#Conclusion
+# Conclusion
 In the end we were able to get everything working the way we originally envisioned. We were able to meet all of our proposed goals for our project. Though it is a little slow, it is a lot of fun watching it move pieces for you. If we had more time, we would probably use it to replace the stepper motors to some more powerful ones. That way we can have it run at two speeds. One very quick speed to move to the next piece it's going to move, and a slower speed when moving the pieces. It was very cool to be able to envision something based off of what we have been learning all semester, and see it become a reality.
