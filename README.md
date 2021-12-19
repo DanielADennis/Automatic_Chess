@@ -7,10 +7,10 @@ Daniel Dennis
 Dallin Schiffman 
 
 
-Objectives 
+# Objectives 
 The main goal of this project was to make a chess board that moves the pieces for you. Features that we wanted to include are a menu to select different modes. One mode would be a “Manal Game” where you and an opponent take turns inputting desired moves. The other mode, “Auto Game” plays back a preset game from a tournament in history.
 
-Supplies 
+# Supplies 
 For this project, we tried to use as many parts as possible that we already had. The parts from the Lab kit include:
 2 “28BYJ-48” Stepper Motors
 1 16 digit keypad
