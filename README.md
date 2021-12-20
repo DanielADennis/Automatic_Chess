@@ -6,6 +6,8 @@ Daniel Dennis
 
 Dallin Schiffman 
 
+Check out the project in action at 
+https://youtu.be/0k_Jh1rKQxs
 
 # Objectives 
 The main goal of this project was to make a chess board that moves the pieces for you. Features that we wanted to include are a menu to select different modes. One mode would be a “Manal Game” where you and an opponent take turns inputting desired moves. The other mode, “Auto Game” plays back a preset game from a tournament in history.
