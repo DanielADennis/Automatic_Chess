@@ -25,6 +25,8 @@ Timing belt
 
 Plastic Filament for 3D Printing
 
+Check out the 3D Designs here: https://www.thingiverse.com/thing:5169945
+
 4 hinge roller micro switches
 
 2 Linear Ball Bearings
