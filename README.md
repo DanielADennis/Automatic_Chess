@@ -6,7 +6,7 @@ Daniel Dennis
 
 Dallin Schiffman 
 
-Check out the project in action at 
+Check out the project in action: 
 https://youtu.be/0k_Jh1rKQxs
 
 # Objectives 
