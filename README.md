@@ -1,6 +1,6 @@
 # Automatic_Chess
 
-ECE 3710 - Fall 2021
+Microcontrollers - Fall 2021
 
 Daniel Dennis 
 
